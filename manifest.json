@@ -1,0 +1,51 @@
+{
+  "source_base_path": "/home/runner/work/examen-si889-2025-ii-u2-mayrafc/examen-si889-2025-ii-u2-mayrafc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/y/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/y/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/y/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/y/introduction.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
