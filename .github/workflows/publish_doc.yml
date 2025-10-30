@@ -37,9 +37,33 @@ jobs:
       - name: Generate documentation
         run: |
           if [ ! -f "docfx.json" ]; then
-            docfx init
+            echo '{
+              "metadata": [
+                {
+                  "src": [
+                    { "files": ["src/EmployeeLib/**/*.csproj"] }
+                  ],
+                  "dest": "api"
+                }
+              ],
+              "build": {
+                "content": [
+                  { "files": ["api/**.yml", "api/index.md"] },
+                  { "files": ["**.md"], "exclude": ["obj/**", "_site/**"] }
+                ],
+                "resource": [
+                  { "files": ["images/**"] }
+                ],
+                "dest": "_site",
+                "globalMetadata": {
+                  "_appTitle": "EmployeeLib Documentation"
+                }
+              }
+            }' > docfx.json
           fi
+
           docfx build
+
 
 
       - name: Generate class diagram
