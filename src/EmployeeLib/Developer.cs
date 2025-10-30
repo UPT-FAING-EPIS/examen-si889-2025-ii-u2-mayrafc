@@ -1,9 +1,12 @@
-public class Developer : Employee
+namespace EmployeeLib
 {
-    public string ProgrammingLanguage { get; set; }
-
-    public override string Accept(IEmployeeVisitor visitor)
+    public class Developer : Employee
     {
-        return visitor.VisitDeveloper(this);
+        public string ProgrammingLanguage { get; set; }
+
+        public override string Accept(IEmployeeVisitor visitor)
+        {
+            return visitor.VisitDeveloper(this);
+        }
     }
 }

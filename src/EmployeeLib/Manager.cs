@@ -1,9 +1,12 @@
-public class Manager : Employee
+namespace EmployeeLib
 {
-    public int TeamSize { get; set; }
-
-    public override string Accept(IEmployeeVisitor visitor)
+    public class Manager : Employee
     {
-        return visitor.VisitManager(this);
+        public int TeamSize { get; set; }
+
+        public override string Accept(IEmployeeVisitor visitor)
+        {
+            return visitor.VisitManager(this);
+        }
     }
 }

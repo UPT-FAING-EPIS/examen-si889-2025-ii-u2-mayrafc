@@ -1,8 +1,11 @@
-public static class EmployeeExtensions
+namespace EmployeeLib
 {
-    public static string GenerateReport(this Employee employee)
+    public static class EmployeeExtensions
     {
-        var visitor = new ReportVisitor();
-        return employee.Accept(visitor);
+        public static string GenerateReport(this Employee employee)
+        {
+            var visitor = new ReportVisitor();
+            return employee.Accept(visitor);
+        }
     }
 }

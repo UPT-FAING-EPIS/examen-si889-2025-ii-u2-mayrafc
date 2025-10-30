@@ -1,5 +1,8 @@
-public interface IEmployeeVisitor
+namespace EmployeeLib
 {
-    string VisitDeveloper(Developer developer);
-    string VisitManager(Manager manager);
+    public interface IEmployeeVisitor
+    {
+        string VisitDeveloper(Developer developer);
+        string VisitManager(Manager manager);
+    }
 }

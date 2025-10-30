@@ -1,4 +1,5 @@
 using Xunit;
+using EmployeeLib; // 👈 Esta línea es la que faltaba
 
 public class EmployeeReportTests
 {
