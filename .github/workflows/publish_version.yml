@@ -46,7 +46,7 @@ jobs:
 
       - name: Generate coverage report
         run: |
-          echo "🔍 Searching for coverage files..."
+          echo "Searching for coverage files..."
           find ./TestResults -name "*.xml" -type f
           
           COVERAGE_FILES=$(find ./TestResults -name "coverage.cobertura.xml" -type f)
