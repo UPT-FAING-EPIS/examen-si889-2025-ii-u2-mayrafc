@@ -37,9 +37,10 @@ jobs:
       - name: Generate documentation
         run: |
           if [ ! -f "docfx.json" ]; then
-            docfx init -q
+            docfx init
           fi
           docfx build
+
 
       - name: Generate class diagram
         run: |
